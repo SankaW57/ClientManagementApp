@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableView" name="tableView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>776</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Main</string>
+    </property>
+    <addaction name="actionReturn_Home"/>
+    <addaction name="actionLog_Out_2"/>
+   </widget>
+   <widget class="QMenu" name="menuProjects">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionProject_2"/>
+    <addaction name="actionClients"/>
+    <addaction name="actionEmployees"/>
+    <addaction name="actionPOs"/>
+   </widget>
+   <widget class="QMenu" name="menuCreate">
+    <property name="title">
+     <string>Create</string>
+    </property>
+    <addaction name="actionProject"/>
+    <addaction name="actionEmployee"/>
+    <addaction name="actionClient"/>
+    <addaction name="actionPurchase_Order"/>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuCreate"/>
+   <addaction name="menuProjects"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLog_Out"/>
+   <addaction name="actionReturn_Home"/>
+   <addaction name="actionProject"/>
+   <addaction name="actionProject_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionReturn_Home">
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+  </action>
+  <action name="actionPOs">
+   <property name="text">
+    <string>View Purchase Orders</string>
+   </property>
+  </action>
+  <action name="actionInvoices">
+   <property name="text">
+    <string>Invoices</string>
+   </property>
+  </action>
+  <action name="actionProject">
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="actionEmployee">
+   <property name="text">
+    <string>New Employee</string>
+   </property>
+  </action>
+  <action name="actionClient">
+   <property name="text">
+    <string>New Client</string>
+   </property>
+  </action>
+  <action name="actionLog_Out">
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </action>
+  <action name="actionProposals">
+   <property name="text">
+    <string>Proposals</string>
+   </property>
+  </action>
+  <action name="actionLog_Out_2">
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </action>
+  <action name="actionProject_2">
+   <property name="text">
+    <string>Projects Table</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Order">
+   <property name="text">
+    <string>New Purchase Order</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new purchase order.</string>
+   </property>
+  </action>
+  <action name="actionClients">
+   <property name="text">
+    <string>Clients Table</string>
+   </property>
+  </action>
+  <action name="actionEmployees">
+   <property name="text">
+    <string>Employees Table</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
